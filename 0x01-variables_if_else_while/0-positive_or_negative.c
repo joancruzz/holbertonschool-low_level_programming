@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-* main - program to run random numbers
+* main - Program to run random numbers
 *
 * Return = 0
 */
