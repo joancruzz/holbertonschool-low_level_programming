@@ -1,8 +1,13 @@
 #include <stdio.h>
-#include <string.h>
-int main() {
-	char string[51];
-	strcpy(str, "'Programming is like building a multilingual puzzle");
-	puts(string);
-	return 0;
+
+/**
+*main - Print string using put
+*Return: 0 to exit
+*/
+
+int main(void)
+{
+puts("\"Programming is like building a multilingual puzzle");
+
+return (0);
 }
