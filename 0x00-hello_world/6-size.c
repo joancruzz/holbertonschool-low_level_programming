@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/**
+/*
 *main - Print size of various types
 *Return: 0 to exit
 */
