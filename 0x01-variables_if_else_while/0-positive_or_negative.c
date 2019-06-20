@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
-* main - Program to run random numbers
+* main - Entry point
 *
-* Return = 0
+* Return: Always 0 (Success)
 */
 
 int main(void)
