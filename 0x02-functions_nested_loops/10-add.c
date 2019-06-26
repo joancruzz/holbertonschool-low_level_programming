@@ -2,8 +2,8 @@
 
 /**
  * add - add two numbers
- *@i: The first number to be added
- *@j: The second number to be added
+ *@x: The first number to be added
+ *@y: The second number to be added
  *Return: sum of two numebrs
  */
 
