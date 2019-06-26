@@ -24,7 +24,7 @@ void times_table(void)
 				_putchar(result % 10 + '0');
 
 			}
-			else 
+			else
 			{
 				if (y > 0)
 				{
@@ -33,7 +33,7 @@ void times_table(void)
 					_putchar(' ');
 
 				}
-				_putchar(result + '0');	
+				_putchar(result + '0');
 
 			}
 		}
