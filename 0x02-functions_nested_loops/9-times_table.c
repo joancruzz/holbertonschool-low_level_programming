@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
-*times_table - Entry
-*
-*Return: 0
-*/
+ *times_table - Entry
+ *
+ *Return: 0
+ */
 
 void times_table(void)
 {
@@ -18,26 +18,26 @@ void times_table(void)
 
 			if (result >= 10)
 			{
+				_putchar(',');
+				_putchar(' ');
 				_putchar(result / 10 + '0');
 				_putchar(result % 10 + '0');
-				_putchar(' ');
-				_putchar(',');
 
 			}
-			else
+			else 
 			{
-				_putchar(result + '0');
-
-				if (y <= 9)
+				if (y > 0)
 				{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+
 				}
+				_putchar(result + '0');	
+
 			}
-
-
 		}
-	_putchar ('\n');
+		_putchar ('\n');
+
 	}
 }
