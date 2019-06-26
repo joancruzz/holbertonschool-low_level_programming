@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  * add - add two numbers
  *@x: The first number to be added
