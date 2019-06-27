@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *more_numbers - Entry
+ * more_numbers - Entry
  *
  *Return: 0
  */
@@ -9,6 +9,7 @@
 void more_numbers(void)
 {
 	int n, m;
+
 	for (m = 0; m <= 10; m++)
 	{
 
