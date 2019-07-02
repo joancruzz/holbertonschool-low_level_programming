@@ -1,16 +1,26 @@
 #include "holberton.h"
 
 /**
-  *
-  *
-  *
-  */
+ * rev_string - Entry
+ * @s: Write function in reserve
+ * Return: void
+ */
 
-void rev_string(char *s);
+void rev_string(char *s)
 {
-	int i = 0;
+	int front = 0;
+	int back = 0;
+	char i;
 
-	for (; *s!=0; s++)
+	while (s[front] != '\0')
+		front++;
+	while (back < front)
 	{
-		_puts
+		i = s[front - 1];
+		s[front - 1] = s[back];
+		s[back] = i;
+		back++;
+		front--;
+	}
+}
 
