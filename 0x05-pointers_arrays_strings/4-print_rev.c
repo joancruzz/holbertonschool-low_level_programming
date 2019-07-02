@@ -1,11 +1,20 @@
 #include "holberton.h"
 
 /**
-  *
-  *
-  *
-  */
+ * _puts - Entry
+ * @str: Print string
+ * Return: void
+ */
 
-void print_rev(char *s);
+void _puts(char *str);
 {
+	int i;
+
+	for (i=0; *str[i] != '\0'; i++)
+	{
+		_putchar( str[i]);
+	}
+
+	_putchar('\n');
+}
 
