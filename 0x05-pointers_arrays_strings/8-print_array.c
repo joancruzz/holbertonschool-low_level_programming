@@ -2,7 +2,7 @@
 #include "holberton.h"
 
 /**
- * Print_array - Print n elements of an array of integers
+ * print_array - Print n elements of an array of integers
  * @a: The array to print
  * @n: The number of elements to print
  * Return: void
