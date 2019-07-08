@@ -1,22 +1,22 @@
 #include "holberton.h"
 
 /**
- *  - Entry point
- *
- *Return: 
+ * reverse_array - Entry point
+ * @a: int pointer
+ * @n: number of elements in array
+ *Return: void
  */
 
 void reverse_array(int *a, int n)
 {
-	int i = 0;
-	int temp = 0;
+	int x, y, temp;
 
-	for (i = 0; i < n; i++)
+	y = n;
+	for (x = 0; x < y; x++)
 	{
-		temp = a[i];
-		a[i] = a[n - 1];
-		a[n - 1] = temp;
-		i++;
-		n--;
+		temp = a[x];
+		a[x] = a[n - x - 1];
+		a[n - x - 1] = temp;
+		y--;
 	}
 }
