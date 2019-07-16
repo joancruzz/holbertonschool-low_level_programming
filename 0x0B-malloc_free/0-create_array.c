@@ -2,10 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-  * create_array - 
-  *
-  *
-  *
+  * create_array - Creates an array of chars
+  * @size: size of array
+  * @c: char of array
+  * Return: NULL
   */
 
 char *create_array(unsigned int size, char c)
@@ -15,7 +15,7 @@ char *create_array(unsigned int size, char c)
 
 	if (size != 0)
 	{
-		s = malloc (size * sizeof(char));
+		s = malloc(size * sizeof(char));
 		if (s == NULL)
 		{
 			return (NULL);
@@ -27,7 +27,7 @@ char *create_array(unsigned int size, char c)
 			i++;
 		}
 
-		return(s);
+		return (s);
 	}
 	else
 		return (NULL);
