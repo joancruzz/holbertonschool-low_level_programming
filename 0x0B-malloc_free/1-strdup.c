@@ -24,7 +24,6 @@ char *_strdup(char *str)
 		{
 			return (NULL);
 		}
-	
 		for (i = 0; i < size; i++)
 		{
 			copy[i] = str[i];
@@ -37,4 +36,3 @@ char *_strdup(char *str)
 	}
 	return (NULL);
 }
-
