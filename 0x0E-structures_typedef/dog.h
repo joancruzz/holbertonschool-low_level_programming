@@ -4,7 +4,6 @@
 
 /**
   * struct dog - Struct of dog
-  * struct dog_t - New type of struct
   * @name: name of dog
   * @age: age of dog
   * @owner: owner of dog
@@ -18,6 +17,13 @@ struct dog
 	float age;
 	char *owner;
 };
+
+/**
+  * struct dog_t - New type of struct
+  * @name: name of dog
+  * @age: age of dog
+  * @owner: owner of dog
+  */
 
 typedef struct dog_t
 {
