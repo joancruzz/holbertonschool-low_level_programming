@@ -54,7 +54,7 @@ void print_all(const char * const format, ...)
 
 	unsigned int x = 0;
 	int y = 0;
-	char *separator = ", ";
+	char *separator = "";
 	va_list arguments;
 
 	datatypes_t types[] = {
@@ -74,9 +74,10 @@ void print_all(const char * const format, ...)
 		{
 			if (format[x] == *types[y].argtype)
 			{
+				printf("%s", separator);
 				types[y].funcpointer(arguments);
-				if (format[x + 1] != 0)
-					printf("%s", separator);
+				separator = ", ";
+
 			}
 			y++;
 		}
