@@ -13,9 +13,9 @@
 
 typedef struct datatypes
 {
-	char *argtype;
+	char argtype;
 	void (*funcpointer)(va_list argument);
-}datatypes_t;
+} datatypes_t;
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
