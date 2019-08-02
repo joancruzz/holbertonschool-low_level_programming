@@ -11,7 +11,7 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *newhead;
 
-	newhead = malloc (sizeof(list_t));
+	newhead = malloc(sizeof(list_t));
 	if (!newhead)
 		return (NULL);
 
@@ -27,11 +27,11 @@ list_t *add_node(list_t **head, const char *str)
   * @s: pointer of string
   * Return: length of string
   */
-int _sterlen (const char *s)
+int _sterlen(const char *s)
 {
 	unsigned int count;
 
 	for (count = 0; s[count]; count++)
 		;
-	return(count);
+	return (count);
 }
