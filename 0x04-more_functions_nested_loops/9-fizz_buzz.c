@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
-  * main - Entry of program
-  * Return: Printed numbers and strings
-  */
-
+ * main - Fizz Buzz
+ *
+ * Return: Strings and Integers
+ */
 int main(void)
 {
 	int num;
@@ -12,14 +12,17 @@ int main(void)
 	for (num = 1; num <= 100; ++num)
 	{
 		if (num % 3 == 0 && num % 5 == 0)
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		else if (num % 3 == 0)
-			printf("Fizz ");
+			printf("Fizz");
 		else if (num % 5 == 0)
-			printf("Buzz ");
+			printf("Buzz");
 		else
-			printf("%d ", num);
+			printf("%d", num);
+		if (num < 100)
+			putchar(' ');
+		else
+			putchar('\n');
 	}
-	putchar('\n');
 	return (0);
 }
