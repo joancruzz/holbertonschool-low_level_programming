@@ -1,16 +1,16 @@
 #include "holberton.h"
 /**
-  * print_times_table - function that prints times table
-  * @n: the nth num of the times table
-  * Return: void
-  */
-
+ * print_times_table - Print the n times table
+ * @n: The times table to print
+ */
 void print_times_table(int n)
 {
-	int x, y;
+	int x;
+	int y;
 
-	if ((n < 0) || (n > 15))
+	if ((n > 15) || (n < 0))
 		return;
+
 	for (x = 0; x <= n; x++)
 	{
 		for (y = 0; y <= n; y++)
@@ -19,28 +19,29 @@ void print_times_table(int n)
 			{
 				if (y != 0)
 				{
-					putchar(' ');
-					putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
 				}
-
 			}
 			else if ((x * y) < 100)
 			{
-				putchar(' ');
-				putchar(x * y / 10 + '0');
+				_putchar(' ');
+				_putchar(x * y / 10 + '0');
 			}
 			else
 			{
-				putchar(x * y / 100 + '0');
-				putchar((x * y / 10) % 10 + '0');
+				_putchar(x * y / 100 + '0');
+				_putchar((x * y / 10) % 10 + '0');
 			}
-			putchar(x * y % 10 + '0');
+			_putchar(x * y % 10 + '0');
 			if (y == n)
-				putchar('\n');
+			{
+				_putchar('\n');
+			}
 			else
 			{
-				putchar(',');
-				putchar(' ');
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 	}
