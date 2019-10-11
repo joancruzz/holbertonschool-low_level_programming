@@ -19,12 +19,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	head = ht->array[index];
 
 	if (!ht || !value || !key || key == (""))
-		return 0;
+		return (0);
 	while (head != NULL)
 	{
 		if (strcmp(key, head->key) == 0)
 		{
-			free (head->value);
+			free(head->value);
 			head->value = strdup(value);
 			return (1);
 		}
