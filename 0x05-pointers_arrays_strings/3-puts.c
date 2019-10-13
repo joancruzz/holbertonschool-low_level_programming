@@ -6,13 +6,12 @@
  * Return: void
  */
 
-void print_rev(char *s)
+void _puts(char *str)
 {
-	int i = 0;
+	int i;
 
-	for (; *s == 0; s--)
-	
-		i++;
+	for (i = 0; str[i] != '\0'; i++)
+		_putchar(str[i]);
+	_putchar('\n');
 }
-
 
