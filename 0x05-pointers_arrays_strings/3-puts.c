@@ -1,8 +1,7 @@
 #include "holberton.h"
-
 /**
- * print_rev - Entry
- * @s: Print a string
+ * _puts - functiont that prints a string
+ * @str: string
  * Return: void
  */
 
