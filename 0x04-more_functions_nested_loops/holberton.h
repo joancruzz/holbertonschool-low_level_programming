@@ -15,5 +15,7 @@ void print_diagonal(int n);
 void print_square(int size);
 void fizz_buzz(int num);
 void print_triangle(int size);
+int max_prime_num(int n);
+void print_number(int n);
 
 #endif
