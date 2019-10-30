@@ -2,8 +2,8 @@
 
 /**
  * swap - a function that swaps two elements in an array
- * @array: Array to sort
- * @size: Size of the Array
+ * @first: first element
+ * @second: second element
  * Return: Void
  */
 void swap(int *first, int *second)
@@ -37,6 +37,6 @@ void bubble_sort(int *array, size_t size)
 			}
 		}
 		if (sorted == 0)
-		       break;
+			break;
 	}
 }

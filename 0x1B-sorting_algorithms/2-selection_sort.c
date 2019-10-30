@@ -2,15 +2,15 @@
 
 /**
  * swap - a function that swaps two elements in an array
- * @array: Array to sort
- * @size: Size of the Array
+ * @first: first element
+ * @second: second element
  * Return: Void
  */
 void swap(int *first, int *second)
 {
-        int temp = *first;
-        *first = *second;
-        *second = temp;
+	int temp = *first;
+	*first = *second;
+	*second = temp;
 }
 
 /**
@@ -22,16 +22,20 @@ void swap(int *first, int *second)
  */
 void selection_sort(int *array, size_t size)
 {
-    size_t i, j, min_idx;
+	size_t i, j, min_idx;
 
-    for (i = 0; i < size - 1; i++)
-    {
-        min_idx = i;
-        for (j = i + 1; j < size; j++)
-          if (array[j] < array[min_idx])
-            min_idx = j;
-
-        swap(&array[min_idx], &array[i]);
-	print_array(array, size);
-    }
+	if (!array || size < 2)
+		return;
+	for (i = 0; i < size; i++)
+	{
+		min_idx = i;
+		for (j = i + 1; j < size; j++)
+			if (array[j] < array[min_idx])
+				min_idx = j;
+		if (i != min_idx)
+		{
+			swap(&array[min_idx], &array[i]);
+			print_array(array, size);
+		}
+	}
 }

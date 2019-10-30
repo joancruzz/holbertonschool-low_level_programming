@@ -25,7 +25,7 @@ int hoare(int *array, size_t size, int low, int high)
 {
 	int pivot = array[low];
 	int i = low - 1, j = high + 1;
-
+  
 	while (1)
 	{
 		/* Find leftmost element greater than
@@ -82,7 +82,7 @@ void quickswap_h(int *array, size_t size, int low, int high)
  */
 void quick_sort_hoare(int *array, size_t size)
 {
-	if (!array || size < 2)
+	if (!array)
 		return;
 	quickswap_h(array, size, 0, size - 1);
 }
