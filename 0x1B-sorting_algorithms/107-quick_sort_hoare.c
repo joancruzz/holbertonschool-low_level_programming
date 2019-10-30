@@ -2,8 +2,8 @@
 
 /**
  * swap - a function that swaps two elements in an array
- * @array: Array to sort
- * @size: Size of the Array
+ * @first: first element
+ * @second: second element
  * Return: Void
  */
 void swap(int *first, int *second)
@@ -25,26 +25,17 @@ int hoare(int *array, size_t size, int low, int high)
 {
 	int pivot = array[low];
 	int i = low - 1, j = high + 1;
-  
+
 	while (1)
 	{
-		/* Find leftmost element greater than
-		   or equal to pivot */
-		do
-		{
+		do {
 			i++;
-		}
-		while (array[i] < pivot);
+		} while (array[i] < pivot);
 
-		/* Find rightmost element smaller than
-		   or equal to pivot */
-		do
-		{
+		do {
 			j--;
-		}
-		while (array[j] > pivot);
+		} while (array[j] > pivot);
 
-		/* If two pointers met. */
 		if (i >= j)
 			return (j);
 		swap(&array[i], &array[j]);
@@ -75,7 +66,8 @@ void quickswap_h(int *array, size_t size, int low, int high)
 
 /**
  * quick_sort_hoare - a function that sorts an array of integers
- * in ascending order using the Quick sort algorithm with Hoare partition scheme
+ * in ascending order using the Quick sort algorithm
+ * with Hoare partition scheme
  * @array: Array of integers
  * @size: size of the Array
  * Return: Void

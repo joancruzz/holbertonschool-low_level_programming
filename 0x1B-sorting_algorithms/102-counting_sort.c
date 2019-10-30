@@ -40,11 +40,8 @@ void counting_sort(int *array, size_t size)
 	container = malloc(sizeof(int) * range);
 	sorted_array = malloc(sizeof(int) * size);
 
-	/* Storing count of each character */
 	for (i = 0; array[i]; ++i)
 		++container[array[i]];
-
-	/* Updating count so count[i] contains actual index count */
 	for (i = 0; i < range; ++i)
 	{
 		container[i] += container[i - 1];
@@ -54,14 +51,11 @@ void counting_sort(int *array, size_t size)
 		else
 			printf("\n");
 	}
-	/* Build sorted_array */
 	for (i = 0; array[i]; ++i)
 	{
 		sorted_array[container[array[i]] - 1] = array[i];
 		--container[array[i]];
 	}
-
-	/* Copy values from sorted_array to array */
 	for (i = 0; array[i]; ++i)
 		array[i] = sorted_array[i];
 

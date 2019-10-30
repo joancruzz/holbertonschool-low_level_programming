@@ -1,4 +1,5 @@
 #include "sort.h"
+
 /**
  * swap_nodes - function that swaps two nodes in a linked list
  * @left_node: left side node
@@ -45,14 +46,14 @@ void insertion_sort_list(listint_t **list)
 	{
 		if (temp->n > temp->next->n)
 		{
-			swaprev_nodes(temp, temp->next, list);
+			swap_nodes(temp, temp->next, list);
 			sorted = temp;
 			temp = temp->prev;
 			while (temp && temp->prev)
 			{
 				current = temp;
 				if (current->n < current->prev->n)
-					swaprev_nodes(current->prev, current, list);
+					swap_nodes(current->prev, current, list);
 				else
 					break;
 			}
