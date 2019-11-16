@@ -4,7 +4,6 @@ Island Perimeter Module with island_perimeter function
 """
 
 
-
 def island_perimeter(grid):
     """
     a function def island_perimeter(grid)
