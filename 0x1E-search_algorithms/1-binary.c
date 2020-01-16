@@ -34,7 +34,7 @@ size_t mid;
 
 if (!array)
 {
-return -1;
+return (-1);
 }
 while (low <= high)
 {
