@@ -10,10 +10,6 @@ void print_array(const int *array, size_t low, size_t high)
 {
 unsigned int i;
 
-if (!array)
-{
-return;
-}
 printf("Searching in array: ");
 for (i = low; i < high; i++)
 {
@@ -36,6 +32,10 @@ size_t low = 0;
 size_t high = size - 1;
 size_t mid;
 
+if (!array)
+{
+return -1;
+}
 while (low <= high)
 {
 print_array(array, low, high);
