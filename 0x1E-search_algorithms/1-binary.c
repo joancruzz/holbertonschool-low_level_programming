@@ -34,11 +34,12 @@ int binary_search(int *array, size_t size, int value)
 {
 size_t low = 0;
 size_t high = size - 1;
+size_t mid;
 
 while (low <= high)
 {
 print_array(array, low, high);
-size_t mid = low + (high - low) / 2;
+mid = low + (high - low) / 2;
 
 if (array[mid] == value)
 {
