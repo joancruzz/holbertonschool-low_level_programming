@@ -13,8 +13,6 @@ int jump_search(int *array, size_t size, int value)
 {
 size_t i = 0;
 size_t block = sqrt(size);
-size_t x;
-size_t start = 0;
 
 if (!array)
 return (-1);
@@ -22,26 +20,30 @@ return (-1);
 
 while (array[i] < value)
 {
-printf("Value checked array[%lu] = [%u]\n", i, array[i]);
-if ((i + block) >= size - 1)
+printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+i += block;
+if (i >= size)
 {
-printf("Value checked array[%lu] = [%i]\n", size - 1, array[size - 1]);
-i = size - 1 + block;
 break;
 }
-i += block;
 }
+printf("Value found between indexes [%ld] and [%ld]\n", i - block, i);
+i -= block;
 
-start = i - block;
-printf("Value found between indexes [%lu] and [%lu]\n", start, i);
-for (x = start; array[x] != value; x++)
+while (array[i] < value)
 {
-printf("Value checked array[%lu] = [%u]\n", x, array[x]);
-if (value > array[size - 1])
+printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+i++;
+if (i == size)
 {
 return (-1);
 }
 }
-printf("Value checked array[%lu] = [%u]\n", x, array[x]);
-return (x);
+
+if (array[i] == value)
+{
+printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+return (i);
+}
+return (-1);
 }
