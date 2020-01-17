@@ -43,3 +43,4 @@ return (-1);
 printf("Value checked array[%lu] = [%u]\n", x, array[x]);
 return (x);
 }
+}
