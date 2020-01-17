@@ -38,7 +38,9 @@ for (x = start; array[x] != value; x++)
 {
 printf("Value checked array[%lu] = [%u]\n", x, array[x]);
 if (value > array[size - 1])
+{
 return (-1);
+}
 }
 printf("Value checked array[%lu] = [%u]\n", x, array[x]);
 return (x);
