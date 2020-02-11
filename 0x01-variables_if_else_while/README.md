@@ -10,7 +10,7 @@ What you should learn from this project:
 
 ---
 
-### [0. Positive anything is better than negative nothing ](.0-positive_or_negative.c)
+### [0. Positive anything is better than negative nothing ](./0-positive_or_negative.c)
 * This program will assign a random number to the variable n each time it is executed. 
 
 
