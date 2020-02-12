@@ -35,7 +35,7 @@ What you should learn from this project:
 * Write a function that encodes a string into 1337.
 
 ### [8. rot13](./8-rot13.c)
-* WWrite a function that encodes a string using rot13.
+* Write a function that encodes a string using rot13.
 
 ---
 
